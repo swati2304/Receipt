@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery Receipt</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .main-container {
+        height: 80px;
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+      }
+      .first-container{
+        background-color: rgb(248, 124, 124);
+        width: 80%;
+        color: white;
+      }
+      .brand-title{
+        text-align: center;
+        margin: 5px;
+        padding: 8px;
+        font-size: 40px;
+      }
+      .brand-image{
+        display: block;
+        height: 100px;
+        background-color: none;
+        margin-left: 15px;
+        margin-bottom: 5px;
+      }
+      .information-container{
+        width: 60%;
+        background-color: rgb(248, 124, 124);
+        color: white;
+        text-align: center;
+        height: 40px;
+        font-size: 18px;
+        margin-left: 0;
+      }
+      .receipt-key{
+        color: gray;
+      }
+      .receipt-value{
+        font-weight: bold;
+        font-size: 17px;
+        border-bottom: 1px dashed grey;
+      }
+      .receipt-details{
+        display: flex;
+        justify-content: space-around;
+      }
+      .receipt-btn{
+        background-color: rgb(202, 245, 245);
+        border: none;
+        border-radius: 10px;
+        height: 28px;
+        width: 200px;
+        font-size: 17px;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+      .left-mar{
+        margin-left: 380px;
+    }
+    .receipt-simple-btn{
+        background-color: rgb(235, 240, 240);
+        border: none;
+        border-radius: 10px;
+        height: 28px;
+        width: 200px;
+        font-size: 17px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    .start{
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+    .receipt-footer{
+        text-align: start;
+        margin-left: 100px;
+        padding: 20px;
+    }
+    .last-details{
+        font-size: 12px;
+    }
+    .paragraph{
+        font-size: 10px;
+        margin-left: 1300px;
+    }
+    .Signature-image{
+        height: 100px;
+        margin-left: 1300px;
+        display: block;
+        position: absolute;
+        transform: rotate(-10deg);
+        bottom: -42px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="first-container">
+        <h1 class="brand-title">Delivery Receipt</h1>
+      </div>
+      <div>
+        <img src="vehicle.png" class="brand-image" />
+      </div>
+    </div>
+    </br>
+    </br>
+    <div class="information-container">
+        <h2>Customer Information</h2>
+    </div>
+    </br>
+    </br>
+    <div>
+    <div class="receipt-details">
+        <div class="receipt-key">
+            Name :
+        </div>
+        <div class="receipt-value">
+            Swati Nimje
+        </div>
+        <div class="receipt-key">
+            Date :
+        </div>
+        <div class="receipt-value">
+            12-12-2023
+        </div>
+        <div class="receipt-key">
+            Email :
+        </div>
+        <div class="receipt-value">
+            swatinimje23@gmail.com
+        </div>
+    </div>
+    </br>
+    <div class="receipt-details">
+        <div class="receipt-key">
+            Mobile:
+        </div>
+        <div class="receipt-value">
+            8459666850
+        </div>
+        <div class="receipt-key">
+            Delivery:
+        </div>
+        <div class="receipt-value">
+            13-12-2023
+        </div>
+        <div class="receipt-key">
+            Address
+        </div>
+        <div class="receipt-value">
+        Bhawani Nagar Pardi Nagpur
+        </div>
+    </div>
+</br>
+</br>
+</br>
+<div class="information-container">
+    <h2>Order Details</h2>
+</div>
+</br>
+</br>
+<div>
+    <button type="button" class="receipt-btn left-mar">Item Discription</button>
+    <button type="button" class="receipt-btn">Quantity</button>
+    <button type="button" class="receipt-btn">Unit Price</button>
+    <button type="button" class="receipt-btn">Amount</button>
+</div>
+<div>
+    <button type="button" class="receipt-btn start">1</button>
+    <button type="button" class="receipt-simple-btn">Product 1</button>
+    <button type="button" class="receipt-simple-btn">10</button>
+    <button type="button" class="receipt-simple-btn">$ 50</button>
+    <button type="button" class="receipt-simple-btn">$ 500</button>
+</div>
+<div>
+    <button type="button" class="receipt-btn start">2</button>
+    <button type="button" class="receipt-simple-btn">Product B</button>
+    <button type="button" class="receipt-simple-btn">10</button>
+    <button type="button" class="receipt-simple-btn">$ 30</button>
+    <button type="button" class="receipt-simple-btn">$ 300</button>
+</div>
+<div>
+    <button type="button" class="receipt-btn start">3</button>
+    <button type="button" class="receipt-simple-btn">Product C</button>
+    <button type="button" class="receipt-simple-btn">5</button>
+    <button type="button" class="receipt-simple-btn">$ 40</button>
+    <button type="button" class="receipt-simple-btn">$ 200</button>
+</div>
+<div>
+    <button type="button" class="receipt-btn start">4</button>
+    <button type="button" class="receipt-simple-btn">Product D</button>
+    <button type="button" class="receipt-simple-btn">20</button>
+    <button type="button" class="receipt-simple-btn">$ 20</button>
+    <button type="button" class="receipt-simple-btn">$ 200</button>
+</div>
+</br>
+</br>
+</br>
+<div>
+    <img src="oooo.png" class="Signature-image"/>
+    <p class="paragraph">Accountant Signature</p>
+</div>
+<div class="receipt-footer">
+    <p>Received By :-<b>    Swati Nimje</b></p>
+    <p>SubTotal :-<b> 1200/-</b></p>
+    <p class="last-details">This is a computerised generated bill and does not required any Signature.</p>
+</div>
+</body>
+</html>

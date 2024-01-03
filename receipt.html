@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <style>
+        body{
+            background-color: grey;
+            font-family: Verdana;
+            font-weight: bold;
+        }
+        .main-receipt-container{
+            height: 600px;
+            width: 1100px;
+            margin: 0 auto;
+            background-color: white;
+        }
+        .second-receipt-container{
+            border: 8px solid black ;
+            height:500px;
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .title-main{
+            text-align: center;
+        }
+        .para-info{
+            text-align: center;
+            padding: 3px;
+            margin: 3px;
+            font-size: 15px;
+        }
+        .title-info{
+            font-size: 50px;
+            text-align: center;
+        }
+        .info-other{
+            padding: 5px;
+            margin: 5px;
+
+        }
+        .third-container{
+            display: flex;
+            flex-direction: row;
+        }
+        .table-container{
+            border: 2px solid black;
+            width: 400px;
+            height: 100px;
+            margin: 3px;
+        }
+        .table-th{
+            border: 2px solid red;
+        }
+        .fourth-container{
+            display: flex;
+            flex-direction: row;
+        }
+        .para-inline{
+            margin-left: 430px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-receipt-container">
+    </br>
+    </br>
+        <div class="second-receipt-container">
+            <h1 class="title-main">Bharat Rubber Stamp Factory</h1>
+            <p class="para-info">Chitnis Park, Mahal, Nagpur.</p>
+            <p class="para-info">Cell:- 8055552135</p>
+            <p class="para-info">Email-Id: www.swatinimje23@gmail.com</p>
+            <h1 class="title-info">Cash Receipt</h1>
+            <div class="third-container">
+                <div>
+                    <p class="info-other">Cash Receipt No. 125484848</p>
+                    <p class="info-other">Cash Receipt form..............................................</p>
+                    <p class="info-other">Cash Receipt for.................................................</p>
+                </div>
+                <div>
+                    <table class="table-container" border="2">
+                        <tbody>
+                            <tr class="table-th">
+                                <td>Total Amount</td>
+                            </tr>
+                            <tr class="table-th"> 
+                                <td>Received Amount</td>
+                            </tr>
+                            <tr class="table-th">
+                                <td>Balance Amount</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <h2>Payments Received In</h2>
+                <div class="fourth-container">
+                    <div>
+                        <input type="checkbox"/>Cash
+                        <input type="checkbox"/>Online
+                        <input type="checkbox"/>Cheque
+                    </div>
+                    <div>
+                        <p class="para-inline">Cash Receipt Signature</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+</body>
+</html>
